@@ -134,7 +134,7 @@ const updateEmployee = () => {
 // Viewing All Roles
 const viewAllRoles = () => {
     db.query('SELECT * FROM role;',
-        function(err, response) {
+       (err, response) => {
             if (err) throw err;
             console.table(response)
             console.log(`\nYou are now viewing all the Roles in our Company!\n`)
